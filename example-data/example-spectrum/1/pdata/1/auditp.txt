@@ -1,0 +1,41 @@
+##TITLE= Audit trail, TOPSPIN		Version 3.2
+##JCAMPDX= 5.01
+##ORIGIN= Bruker BioSpin GmbH
+##OWNER= autosampler
+$$ /opt/topspin3.2/data/ppreikschas/nmr/PP22043C/1/pdata/1/auditp.txt
+##AUDIT TRAIL=  $$ (NUMBER, WHEN, WHO, WHERE, PROCESS, VERSION, WHAT)
+(   1,<2022-10-10 20:33:31.866 +0200>,<autosampler>,<vitoria>,<go>,<TOPSPIN 3.2>,
+      <created by zg
+	started at 2022-10-10 20:17:32.620 +0200,
+	POWCHK enabled, PULCHK disabled,
+       configuration hash MD5:
+       F0 8E 40 A1 57 22 F5 62 FC 4F 4C 31 ED 18 CF 89
+       data hash MD5: 19180
+       1A 38 EC 1F AE BD 73 A6 81 E4 9B 71 E8 5E 40 DF>)
+(   2,<2022-10-10 20:33:32.477 +0200>,<autosampler>,<vitoria>,<audit>,<TOPSPIN 3.2>,
+      <user comment:
+       ICON-NMR User ID: ppreikschas
+       data hash MD5: 19180
+       1A 38 EC 1F AE BD 73 A6 81 E4 9B 71 E8 5E 40 DF>)
+(   3,<2022-10-10 20:33:32.486 +0200>,<autosampler>,<vitoria>,<audit>,<TOPSPIN 3.2>,
+      <user comment:
+       ICON-NMR User ID: ppreikschas
+       data hash MD5: 19180
+       1A 38 EC 1F AE BD 73 A6 81 E4 9B 71 E8 5E 40 DF>)
+(   4,<2022-10-10 20:33:32.959 +0200>,<autosampler>,<vitoria>,<proc1d>,<TOPSPIN 3.2>,
+      <Start of raw data processing
+       ef LB = 0.3 FT_mod = 6 PKNL = 1 SI = 64K 
+       data hash MD5: 64K
+       B0 D4 47 DD 1D 3E 61 86 66 FF 21 BF 07 CE 32 C5>)
+(   5,<2022-10-10 20:33:33.139 +0200>,<autosampler>,<vitoria>,<proc1d>,<TOPSPIN 3.2>,
+      <apk 
+       data hash MD5: 64K
+       9B E5 6E D7 08 D9 8F 38 8A F0 6A 64 56 37 A7 FE>)
+(   6,<2022-10-10 20:33:33.199 +0200>,<autosampler>,<vitoria>,<proc1d>,<TOPSPIN 3.2>,
+      <abs ABSG = 0 
+       data hash MD5: 64K
+       59 76 33 C6 E6 20 10 08 1A 72 7A 4E DC AB 08 64>)
+##END=
+
+$$ hash MD5
+$$ 25 D9 C5 13 05 2A D4 35 39 BD DD 31 3D 3F 6A E3

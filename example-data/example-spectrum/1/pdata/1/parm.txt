@@ -1,0 +1,51 @@
+
+Current Data Parameters
+NAME           PP22043C              
+EXPNO                 1              
+PROCNO                1              
+
+F2 - Acquisition Parameters
+Date_          20221010              
+Time              20.33              
+INSTRUM           spect              
+PROBHD   5 mm PABBO BB-              
+PULPROG    PE_ESW5.reve              
+TD                19180              
+SOLVENT         H2O+D2O              
+NS                  128              
+DS                    8              
+SWH            4795.396 Hz           
+FIDRES         0.250021 Hz           
+AQ            1.9998347 sec          
+RG               198.65              
+DW              104.267 usec         
+DE                 6.50 usec         
+TE                298.2 K            
+D1           5.00000000 sec          
+D16          0.00020000 sec          
+D19          0.00016667 sec          
+TD0                   1              
+
+======== CHANNEL f1 ========
+SFO1        300.2614097 MHz          
+NUC1                 1H              
+P1                14.50 usec         
+P27               14.50 usec         
+PLW1         6.25000000 W            
+PLW18        6.25000000 W            
+
+====== GRADIENT CHANNEL =====
+GPNAM[1]       SINE.100              
+GPNAM[2]       SINE.100              
+GPZ1              34.00 %            
+GPZ2              22.00 %            
+P16             1000.00 usec         
+
+F2 - Processing parameters
+SI                65536              
+SF          300.2600000 MHz          
+WDW                  EM              
+SSB      0              
+LB                 0.30 Hz           
+GB       0              
+PC                 1.00              
