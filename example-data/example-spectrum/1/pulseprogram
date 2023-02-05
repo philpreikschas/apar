@@ -1,0 +1,176 @@
+# 1 "/opt/topspin3.2/exp/stan/nmr/lists/pp/user/PE_ESW5.reve"
+;PEW5
+;Perfect Echo Watergate Sequence
+;Described in 
+;Ralph W. Adams, Chloe M. Holroyd, Juan A. Aguilar, Mathias Nilsson and Gareth A. Morris 
+;Chem. Commun., 2013,49, 358-360
+; This sequence is not fully tested and comes without warranty.
+; Check the sequence and your parameters carefully before use.
+;
+;Based on
+;water suppression using watergate W5 pulse sequence with gradients
+;using double echo
+;
+;M. Liu, X. Mao, C. He, H. Huang, J.K. Nicholson & J.C. Lindon,
+;   J. Magn. Reson. 132, 125 - 129 (1998)
+;
+;$CLASS=HighRes
+;$DIM=1D
+;$TYPE=
+;$SUBTYPE=
+;$COMMENT=
+
+
+# 1 "/opt/topspin3.2/exp/stan/nmr/lists/pp/Avance.incl" 1
+;Avance3.incl
+;   for AV III
+;
+;avance-version (07/12/14)
+;
+;$CLASS=HighRes Incl
+;$COMMENT=
+# 165 "/opt/topspin3.2/exp/stan/nmr/lists/pp/Avance.incl"
+;$Id: Avance3.incl,v 1.9.8.1 2012/01/31 17:56:17 ber Exp $
+# 23 "/opt/topspin3.2/exp/stan/nmr/lists/pp/user/PE_ESW5.reve" 2
+
+# 1 "/opt/topspin3.2/exp/stan/nmr/lists/pp/Grad.incl" 1
+;Grad2.incl  -  include file for Gradient Spectroscopy
+;   for TCU3
+;
+;avance-version (07/01/17)
+;
+;$CLASS=HighRes Incl
+;$COMMENT=
+
+# 27 "/opt/topspin3.2/exp/stan/nmr/lists/pp/Grad.incl"
+define list<gradient> EA=<EA>
+
+
+# 31 "/opt/topspin3.2/exp/stan/nmr/lists/pp/Grad.incl"
+;$Id: Grad2.incl,v 1.13.8.1 2012/01/31 17:56:17 ber Exp $
+# 24 "/opt/topspin3.2/exp/stan/nmr/lists/pp/user/PE_ESW5.reve" 2
+
+
+"acqt0=-p1/3.1416"
+# 1 "mc_line 29 file /opt/topspin3.2/exp/stan/nmr/lists/pp/user/PE_ESW5.reve exp. def. part of mc cmd. before ze"
+define delay MCWRK
+define delay MCREST
+"MCREST = 30m - 30m"
+"MCWRK = 0.333333*30m"
+
+    dccorr
+# 29 "/opt/topspin3.2/exp/stan/nmr/lists/pp/user/PE_ESW5.reve"
+# 29 "/opt/topspin3.2/exp/stan/nmr/lists/pp/user/PE_ESW5.reve"
+1 ze
+# 1 "mc_line 29 file /opt/topspin3.2/exp/stan/nmr/lists/pp/user/PE_ESW5.reve exp. def. of mc cmd. after ze"
+# 30 "/opt/topspin3.2/exp/stan/nmr/lists/pp/user/PE_ESW5.reve"
+# 1 "mc_line 30 file /opt/topspin3.2/exp/stan/nmr/lists/pp/user/PE_ESW5.reve exp. start label for mc cmd."
+2 MCWRK  * 2
+LBLF0, MCWRK
+  MCREST
+# 31 "/opt/topspin3.2/exp/stan/nmr/lists/pp/user/PE_ESW5.reve"
+  d1 
+  10u pl1:f1
+  p1 ph1
+  
+  50u setnmr3|0 setnmr0|34|32|33 ctrlgrad 0
+  p16:gp1
+  d16 pl18:f1
+  p27*0.087 ph3
+  d19*2
+  p27*0.206 ph3
+  d19*2
+  p27*0.413 ph3
+  d19*2
+  p27*0.778 ph3
+  d19*2
+  p27*1.491 ph3
+  d19*2
+  p27*1.491 ph4
+  d19*2
+  p27*0.778 ph4
+  d19*2
+  p27*0.413 ph4
+  d19*2
+  p27*0.206 ph4
+  d19*2
+  p27*0.087 ph4
+  50u
+  p16:gp1
+  d16 pl1:f1
+
+  p1 ph10
+
+# 64 "/opt/topspin3.2/exp/stan/nmr/lists/pp/user/PE_ESW5.reve"
+  50u 
+  p16:gp2
+  d16 pl18:f1
+  p27*0.087 ph5
+  d19*2
+  p27*0.206 ph5
+  d19*2
+  p27*0.413 ph5
+  d19*2
+  p27*0.778 ph5
+  d19*2
+  p27*1.491 ph5
+  d19*2
+  p27*1.491 ph6
+  d19*2
+  p27*0.778 ph6
+  d19*2
+  p27*0.413 ph6
+  d19*2
+  p27*0.206 ph6
+  d19*2
+  p27*0.087 ph6
+  p16:gp2
+  d16
+  50u setnmr3^0 setnmr0^34^32^33 ctrlgrad 7
+
+  go=2 ph31
+# 1 "mc_line 91 file /opt/topspin3.2/exp/stan/nmr/lists/pp/user/PE_ESW5.reve exp. mc cmd. in line"
+  MCWRK wr #0
+  MCWRK zd
+  lo to LBLF0 times td0
+
+  MCWRK
+# 92 "/opt/topspin3.2/exp/stan/nmr/lists/pp/user/PE_ESW5.reve"
+exit
+
+# 95 "/opt/topspin3.2/exp/stan/nmr/lists/pp/user/PE_ESW5.reve"
+ph1=0 2
+ph3=0 0 1 1 2 2 3 3 
+ph4=2 2 3 3 0 0 1 1
+ph5=0 0 0 0 0 0 0 0 1 1 1 1 1 1 1 1
+    2 2 2 2 2 2 2 2 3 3 3 3 3 3 3 3
+ph6=2 2 2 2 2 2 2 2 3 3 3 3 3 3 3 3
+    0 0 0 0 0 0 0 0 1 1 1 1 1 1 1 1
+ph10=1
+ph31=0 2 2 0 0 2 2 0 2 0 0 2 2 0 0 2
+
+
+;pl1 : f1 channel - power level for pulse (default)
+;pl18: f1 channel - power level for 3-9-19-pulse (watergate)
+;p1 : f1 channel -  90 degree high power pulse
+;p16: homospoil/gradient pulse
+;p27: f1 channel -  90 degree pulse at pl18
+;d1 : relaxation delay; 1-5 * T1
+;d16: delay for homospoil/gradient recovery
+;d19: delay for binomial water suppression
+;     d19 = (1/(2*d)), d = distance of next null (in Hz)
+;NS: 8 * n, total number of scans: NS * TD0
+;DS: 4
+# 119 "/opt/topspin3.2/exp/stan/nmr/lists/pp/user/PE_ESW5.reve"
+;use gradient ratio:    gp 1 : gp 2
+;                         34 :   22
+
+;for z-only gradients:
+;gpz1: 34%
+;gpz2: 22%
+
+;use gradient files:
+;gpnam1: SINE.100
+;gpnam2: SINE.100
+# 132 "/opt/topspin3.2/exp/stan/nmr/lists/pp/user/PE_ESW5.reve"
+;$Id: zggpw5,v 1.8 2005/11/10 12:17:01 ber Exp $

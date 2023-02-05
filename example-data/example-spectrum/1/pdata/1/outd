@@ -1,0 +1,16 @@
+##TITLE= Parameter file, TOPSPIN		Version 3.2
+##JCAMPDX= 5.0
+##DATATYPE= Parameter Values
+##NPOINTS= 1	$$ modification sequence number
+##ORIGIN= Bruker BioSpin GmbH
+##OWNER= autosampler
+$$ 2022-10-10 20:07:21.906 +0200  autosampler@vitoria
+$$ /opt/topspin3.2/prog/curdir/changer/inmrchanger/Sep13-2022-1133-autosampler/20/data/nmr/PP22043C/1/pdata/1/outd
+$$ process /opt/topspin3.2/prog/mod/xwish3
+##$CURPLOT= <Cups-PDF>
+##$CURPRIN= <$Cups-PDF>
+##$DFORMAT= <normdp>
+##$LAYOUT= <+/layouts.ATP/1D_ws.xwp>
+##$LFORMAT= <normlp>
+##$PFORMAT= <normpl>
+##END=
