@@ -1,3 +1,5 @@
+https://img.shields.io/badge/license-MIT-blue
+
 # Automated Product Analysis Routine (APAR)
 APAR is an Automated Product Analysis Routine written in Python and designed to automate the determination of concentrations and Faradaic efficiencies of electrochemical CO2 reduction reaction (eCO2RR) products from nuclear magnetic resonance (NMR) raw data.
 
