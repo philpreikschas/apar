@@ -1,5 +1,6 @@
 ![GitHub](https://img.shields.io/github/license/philpreikschas/apar)
 [![documentation](https://img.shields.io/badge/docs-apar.readthedocs.io-lightgrey)](https://apar.readthedocs.io)
+[![DOI](https://zenodo.org/badge/587696258.svg)](https://zenodo.org/badge/latestdoi/587696258)
 
 # Automated Product Analysis Routine (APAR)
 APAR is an Automated Product Analysis Routine written in Python and designed to automate the determination of concentrations and Faradaic efficiencies of electrochemical CO2 reduction reaction (eCO2RR) products from nuclear magnetic resonance (NMR) raw data.
