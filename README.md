@@ -1,6 +1,6 @@
 ![GitHub](https://img.shields.io/github/license/philpreikschas/apar)
 [![documentation](https://img.shields.io/badge/docs-apar.readthedocs.io-lightgrey)](https://apar.readthedocs.io)
-[![DOI article](https://img.shields.io/badge/DOI-10.xxxx/xx-red)](https://dx.doi.org/)
+[![DOI article](https://img.shields.io/badge/DOI-10.1038/s42004-023-00948-9-red)](https://dx.doi.org/)
 [![DOI code](https://img.shields.io/badge/DOI_Code-10.5281/zenodo.8070371-blue)](https://zenodo.org/badge/latestdoi/587696258)
 
 # Automated Product Analysis Routine (APAR)
