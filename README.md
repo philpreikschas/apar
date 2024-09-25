@@ -11,4 +11,4 @@ The main functions are related to six consecutive steps described briefly: (1) a
 
 # Citing APAR
 **NMR-based quantification of liquid products in CO2 electroreduction on phosphate-derived nickel catalysts**.  
-P. Preikschas, A.J. Martín, B.S. Yeo, and J. Pérez-Ramírez, [_Commun. Chem._ **2023**, in press](https://dx.doi.org/10.1038/s42004-023-00948-9).
+P. Preikschas, A.J. Martín, B.S. Yeo, and J. Pérez-Ramírez, [_Commun. Chem._ **2023**, _6_, 147](https://dx.doi.org/10.1038/s42004-023-00948-9).
